@@ -1,0 +1,57 @@
+.container {  display: grid;
+    grid-template-columns: 1.5fr 1.7fr 1.5fr;
+    grid-template-rows: 0.3fr 0.8fr 1.9fr;
+    gap: 15px 15px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "welcome welcome ."
+      "How-to-bowl How-to-bowl ."
+      "Picture-1 Picture-2 picture-3";
+  }
+  
+  .Picture-2 {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.3fr 1.7fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". picture2 ."
+      ". . ."
+      ". . .";
+    grid-area: Picture-2;
+  }
+  
+  .picture2 { grid-area: picture2; }
+  
+  .Picture-1 {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". picture1 ."
+      ". . ."
+      ". . .";
+    grid-area: Picture-1;
+  }
+  
+  .picture1 { grid-area: picture1; }
+  
+  .picture-3 {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". picture3 ."
+      ". . ."
+      ". . .";
+    grid-area: picture-3;
+  }
+  
+  .picture3 { grid-area: picture3; }
+  
+  .welcome { grid-area: welcome; }
+  
+  .How-to-bowl { grid-area: How-to-bowl; }
+  
